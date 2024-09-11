@@ -1,17 +1,3 @@
-To add functionality for navigating to different pages within your blog, you can update the `href` attributes of the links in the navigation menu. You should create separate HTML files for each page and link to those files. Here’s how you can set up a basic structure for your blog with separate pages:
-
-1. **Create separate HTML files**: Each page of your blog will need its own HTML file. For this example, let’s create the following files:
-   - `index.html` (for the Home page)
-   - `blog.html` (for the Blog page)
-   - `projects.html` (for the Projects page)
-   - `support.html` (for the Support page)
-   - `game-download.html` (for the Game Download page)
-
-2. **Update the links** in your HTML files to point to these pages.
-
-Here's an example of what the updated `index.html` might look like, including updated links:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,55 +37,3 @@ Here's an example of what the updated `index.html` might look like, including up
     <script src="scripts.js"></script>
 </body>
 </html>
-```
-
-**Steps for Other Pages**:
-- **blog.html**: Follow the same structure as `index.html`, but update the content to reflect the blog section.
-- **projects.html**: Create a page for showcasing your projects.
-- **support.html**: Include information about how users can get support.
-- **game-download.html**: Provide details and download links for your game.
-
-**Example of `blog.html`**:
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - My Blog</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="game-download.html">Game Download</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <article>
-            <h2>Blog Post Title</h2>
-            <p>Date: September 11, 2024</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, odio et commodo tincidunt, elit orci cursus ligula, ac bibendum nulla eros eget risus. Curabitur dignissim dolor non justo ullamcorper, vel scelerisque urna volutpat.</p>
-            <a href="#">Read more...</a>
-        </article>
-        <!-- Repeat <article> blocks for more posts -->
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Blog</p>
-    </footer>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
-```
-
-By following this approach, you ensure that your blog has separate pages for each section, making it easier for users to navigate and for you to manage content.
